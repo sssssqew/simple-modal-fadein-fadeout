@@ -1,0 +1,73 @@
+.modal-window{
+  width: 40%;
+  /* border: 1px solid red; */
+  position: fixed; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: palegoldenrod;
+  box-shadow: 0 4px 10px 5px grey;
+  text-align: center;
+  z-index: 1;
+  display: none;
+}
+.show{  
+  animation: fadeIn 1s ease-in;
+}
+.hide{
+  animation: fadeOut 1s ease-in;
+}
+#header{
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+#body{
+  /* border: 1px solid red; */
+  padding: 30px;
+  text-align: left;
+  border-top: 3px solid lightgray;
+  border-bottom: 3px solid lightgray;
+}
+#footer{
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer button{
+  all: unset;
+  width: 70px;
+  height: 50px;
+  margin-right: 20px;
+  background: cornflowerblue;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: bold;
+  font: 1rem;
+  color: white;
+}
+#footer button:hover{
+  opacity: 0.8;
+}
+
+/* 애니메이션 정의 */
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
