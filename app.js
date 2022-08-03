@@ -3,6 +3,7 @@ const modalWindow = document.querySelector('.modal-window')
 const closeModalBtn = document.querySelector('#footer button')
 
 function openModal(){
+  modalWindow.classList.remove('hide')
   modalWindow.style.display = "block"
   modalWindow.classList.add('show')
 }
@@ -11,7 +12,7 @@ function closeModal(){
   modalWindow.classList.add('hide')
   setTimeout(() => {
     modalWindow.style.display = 'none'
-  }, 1000)
+  }, 400)
 }
 
 openModalBtn.addEventListener('click', openModal)

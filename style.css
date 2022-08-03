@@ -13,10 +13,10 @@
   display: none;
 }
 .show{  
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn .5s ease-in;
 }
 .hide{
-  animation: fadeOut 1s ease-in;
+  animation: fadeOut .5s ease-in;
 }
 #header{
   height: 70px;
